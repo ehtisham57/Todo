@@ -1,0 +1,137 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background: linear-gradient(rgba(92, 92, 92, 0.8),rgba(44, 0, 61, 0.836)), url(./th.jfif);
+    /* background: linear-gradient(to left, #456892 10%,#9557a1 100%); */
+    background-position: center;
+    /* background: radial-gradient(#fff ,#ffd6d6); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.main,li{
+    background: rgb(155, 155, 155);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    word-break: break-all;
+}
+
+h1{
+    text-align: center;
+    color: #e4e4e4;
+    margin-top: 10vh;
+    font-size: 50px;
+    color: #050505;
+}
+#listbox{
+    margin-top: 100px;
+}
+li{
+    margin-top: 15px;
+}
+li>.edit{
+    float: right;
+    color: #0f0f0f !important;
+    font-size: 25px;
+}
+li>.edit:hover{
+    color: #afafaf !important;
+}
+.list i{
+    color: #ff0000;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.main>input{
+    width: 80%;
+    height: 20px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: transparent;
+    background: #cfcfcf;
+    color: rgb(5, 14, 92);
+}
+
+/* .main>span{
+   justify-content: space-between; 
+    margin-left: auto;
+} */
+.list{
+    /* background: #175466; */
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid rgb(95, 141, 2);
+    color: rgb(0, 44, 44);
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.main>i{
+    color: red;
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid rgb(56, 56, 56);
+
+}
+i:hover{
+    color: #144b61;
+}
+
+
+@media screen and (max-width:700px){
+    .main,li{
+        margin:20px;
+        width: 90%;
+        
+    }
+    .main{
+        margin: 20px;
+        width: 90%;
+    }
+    .main>input{
+        padding: 10px;
+        font-size: 20px;
+    }
+    span>i{
+        font-size: 10px;
+        padding: 5px;
+    
+    }
+}
+
+@media screen and (max-width:500px){
+    .main,li{
+        margin:20px 0;
+        width: 100%;
+        
+    }
+    .main{
+        margin: 0 ;
+        width: 100%;
+    }
+    .main>input{
+        padding: 10px;
+        font-size: 10px;
+    }
+    span>i{
+        font-size: 15px;
+        padding: 5px;
+    
+    }
+} 
